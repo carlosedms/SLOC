@@ -1,28 +1,38 @@
 ﻿# Introduction
 
-<!-- TODO -->
-Programa para contar a quantidade de linhas de comentários, linhas vazias e linhas de código de um arquivo do tipo C/C++/H/HPP. O programa recebe um diretório ou um único arquivo e exibe os dados daquele diretório/arquivo. Se executado com um diretório, também é apresentada uma soma de todos os arquivos analisados.
+A simple program that counts the amount of code lines, empty lines and comment lines in a determined file or directory (or multiple directories, as the program is able to access them recursively if you wish to). Made as a project for Programming Language 1, and remade with improvements as a personal project.
 
-# Author(s)
+Currently supported file types:
 
-<!-- TODO -->
+- C
+- C header
+- C++
+- C++ header
 
-William Campos Silva - camposwilliam23@gmail.com
-Carlos Eduardo Miranda da Silva - cems2002@outlook.com
+# Running the program
 
-# Compiling and Runnig
+The program receives as arguments the path to either a directory or a single file and displays a table with the contents of the analyzed files.
 
-<!-- TODO -->
-Compilador utilizado: MinGW
+Some other arguments can be used to specify how the resulting table is sorted and if you want directories within the original to be scanned aswell.
 
-Para compilar, se dirigir até o diretório com o arquivo e executar:
+To run the program, using a command prompt simply navigate to the directory in which the sloc executable is and run:
 
-g++ -o sloc sloc.cpp
+    sloc path-to-directory-or-file
 
-Para executar (ainda dentro do diretório):
+For example:
 
-sloc caminho-do-diretório/arquivo
+To execute the program in an entire directory:
 
-Exemplo: C:\Users\Carlos\Desktop\programas\Estudo\C++\projeto_SLOC  // para executar o programa em um diretório
+    sloc C:\Users\Carlos\Desktop\Programs\project_SLOC (path ends on a directory)
 
-         C:\Users\Carlos\Desktop\programas\Estudo\C++\projeto_SLOC\exemplo.cpp  // para executar o programa em um único arquivo
+To execute the program on a single file:
+
+    sloc C:\Users\Carlos\Desktop\Programs\project_SLOC\example.cpp (path ends on a file)
+
+# Authors
+
+Carlos Eduardo Miranda da Silva - cems2002@outlook.com - @carlosedms
+
+Original code written in collaboration with:
+
+William Campos Silva - camposwilliam23@gmail.com - @soueuwilliam
